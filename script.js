@@ -13,3 +13,24 @@ const genaratePin = () =>{
     const pin = getPin()
     pinInput.value = pin;
 }
+
+// create mini calculator
+const calculator = document.getElementById('key-pad')
+const display = document.getElementById('calculate-display')
+
+calculator.addEventListener('click', (event)=>{
+   const number = event.target.innerText;
+   if( isNaN(number)){
+        if ( number === 'C'){
+            display.value = ''
+        }
+   }
+   else{
+    // const previousNumber = display.value;
+    // const newNumber = previousNumber + number;
+    // display.value = newNumber;
+    display.value += number;
+   }
+})
+
+// 
