@@ -104,3 +104,14 @@ color: #E0B612;
     color: #FF3C5F;
     margin-top: 10px;
 }
+
+.notify-section p{
+    border-radius:.5rem;
+    background:#222436;
+    color:#fff;
+    margin-top:1.5rem;
+    padding: 1rem;
+    text-align:center;
+    font-size:1rem;
+    display:none;
+}

@@ -33,4 +33,15 @@ calculator.addEventListener('click', (event)=>{
    }
 })
 
-// 
+// pin match
+const showMessage = document.getElementById('show-message')
+
+const isPinMatch = () =>{
+    if ( pinInput.value === display.value){
+        showMessage.style.display = 'block';
+        showMessage.innerText =  "✅ Pin Matched... Secret door is opening for you"
+    }else{
+        showMessage.style.display = 'block';
+        showMessage.innerText = "❌ Pin Didn't Match, Please try again"
+    }
+}
